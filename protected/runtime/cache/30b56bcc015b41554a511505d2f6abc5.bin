@@ -1,0 +1,2 @@
+a:2:{i:0;a:4:{i:0;a:3:{s:2:"id";s:1:"1";s:7:"opt_key";s:8:"tryLogin";s:9:"opt_value";s:2:"10";}i:1;a:3:{s:2:"id";s:1:"2";s:7:"opt_key";s:14:"minuteBanLogin";s:9:"opt_value";s:2:"60";}i:2;a:3:{s:2:"id";s:1:"3";s:7:"opt_key";s:10:"ipBanLogin";s:9:"opt_value";s:11:"127.0.0.2
+";}i:3;a:3:{s:2:"id";s:1:"4";s:7:"opt_key";s:8:"def_form";s:9:"opt_value";s:1:"2";}}i:1;N;}
