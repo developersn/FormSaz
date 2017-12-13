@@ -143,3 +143,291 @@ Stack trace:
 REQUEST_URI=/FormSaz/images/favicon.png?123
 HTTP_REFERER=http://localhost/FormSaz/index.php/manage24/index
 ---
+2017/12/03 10:34:02 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mysql.form' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `form`.
+2017/12/03 10:34:02 [error] [exception.CDbException] exception 'CDbException' with message 'جدول "form" برای اکتیو رکورد کلاس "Form" در پایگاه اطلاعاتی یافت نمی شود' in C:\xampp\htdocs\FormSaz\yii\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\xampp\htdocs\FormSaz\yii\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Form))
+#1 C:\xampp\htdocs\FormSaz\yii\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\xampp\htdocs\FormSaz\yii\db\ar\CActiveRecord.php(1350): CActiveRecord->getTableSchema()
+#3 C:\xampp\htdocs\FormSaz\yii\db\ar\CActiveRecord.php(1456): CActiveRecord->query(Object(CDbCriteria))
+#4 C:\xampp\htdocs\FormSaz\protected\controllers\XmainController.php(138): CActiveRecord->find('status=1 and id...', Array)
+#5 C:\xampp\htdocs\FormSaz\protected\controllers\XmainController.php(32): XmainController->actionForm('2')
+#6 C:\xampp\htdocs\FormSaz\yii\web\actions\CInlineAction.php(49): XmainController->actionIndex()
+#7 C:\xampp\htdocs\FormSaz\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\FormSaz\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\FormSaz\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\FormSaz\yii\web\CWebApplication.php(282): CController->run('')
+#11 C:\xampp\htdocs\FormSaz\yii\web\CWebApplication.php(141): CWebApplication->runController('')
+#12 C:\xampp\htdocs\FormSaz\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\FormSaz\index.php(12): CApplication->run()
+#14 {main}
+REQUEST_URI=/FormSaz/
+---
+2017/12/03 10:34:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'امکان پاسخ به درخواست "install.php" وجود ندارد' in C:\xampp\htdocs\FormSaz\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\FormSaz\yii\web\CWebApplication.php(141): CWebApplication->runController('install.php')
+#1 C:\xampp\htdocs\FormSaz\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\FormSaz\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/FormSaz/install.php
+---
+2017/12/03 10:36:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'امکان پاسخ به درخواست "images/favicon.png" وجود ندارد' in C:\xampp\htdocs\FormSaz\yii\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\FormSaz\yii\web\CWebApplication.php(141): CWebApplication->runController('images/favicon....')
+#1 C:\xampp\htdocs\FormSaz\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\FormSaz\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/FormSaz/images/favicon.png?123
+---
+2017/12/03 10:37:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'سیستم توانایی یافتن عمل "form" را ندارد.' in C:\xampp\htdocs\FormSaz\yii\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\FormSaz\yii\web\CController.php(270): CController->missingAction('form')
+#1 C:\xampp\htdocs\FormSaz\yii\web\CWebApplication.php(282): CController->run('form')
+#2 C:\xampp\htdocs\FormSaz\yii\web\CWebApplication.php(141): CWebApplication->runController('xadmin/form')
+#3 C:\xampp\htdocs\FormSaz\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\FormSaz\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/FormSaz/index.php/xadmin/form?id=2
+HTTP_REFERER=http://localhost/FormSaz/index.php/manage24/formitems
+---
+2017/12/03 10:37:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'سیستم توانایی یافتن عمل "form" را ندارد.' in C:\xampp\htdocs\FormSaz\yii\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\FormSaz\yii\web\CController.php(270): CController->missingAction('form')
+#1 C:\xampp\htdocs\FormSaz\yii\web\CWebApplication.php(282): CController->run('form')
+#2 C:\xampp\htdocs\FormSaz\yii\web\CWebApplication.php(141): CWebApplication->runController('xadmin/form')
+#3 C:\xampp\htdocs\FormSaz\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\FormSaz\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/FormSaz/index.php/xadmin/form?id=2
+HTTP_REFERER=http://localhost/FormSaz/index.php/xadmin/showFormItem?id=1
+---
+2017/12/03 12:19:23 [error] [exception.CException] exception 'CException' with message 'ویژگیهای "Gateway.webservice" تعریف نشده است.' in C:\xampp\htdocs\FormSaz\yii\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\FormSaz\yii\db\ar\CActiveRecord.php(145): CComponent->__get('webservice')
+#1 C:\xampp\htdocs\FormSaz\yii\web\helpers\CHtml.php(2529): CActiveRecord->__get('webservice')
+#2 C:\xampp\htdocs\FormSaz\yii\web\helpers\CHtml.php(1802): CHtml::resolveValue(Object(Gateway), 'webservice')
+#3 C:\xampp\htdocs\FormSaz\yii\web\widgets\CActiveForm.php(847): CHtml::activeDropDownList(Object(Gateway), 'webservice', Array, Array)
+#4 C:\xampp\htdocs\FormSaz\protected\views\xadmin\addgateway.php(35): CActiveForm->dropDownList(Object(Gateway), 'webservice', Array)
+#5 C:\xampp\htdocs\FormSaz\yii\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\FormSaz\yii\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\FormSaz\yii\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\FormSaz\yii\web\CController.php(782): CController->renderPartial('addgateway', Array, true)
+#9 C:\xampp\htdocs\FormSaz\protected\controllers\XadminController.php(154): CController->render('addgateway', Array)
+#10 C:\xampp\htdocs\FormSaz\yii\web\actions\CInlineAction.php(49): XadminController->actionaddgateway()
+#11 C:\xampp\htdocs\FormSaz\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\FormSaz\yii\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\FormSaz\yii\web\filters\CFilter.php(40): CFilterChain->run()
+#14 C:\xampp\htdocs\FormSaz\yii\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\FormSaz\yii\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 C:\xampp\htdocs\FormSaz\yii\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 C:\xampp\htdocs\FormSaz\yii\web\CController.php(291): CFilterChain->run()
+#18 C:\xampp\htdocs\FormSaz\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp\htdocs\FormSaz\yii\web\CWebApplication.php(282): CController->run('addgateway')
+#20 C:\xampp\htdocs\FormSaz\yii\web\CWebApplication.php(141): CWebApplication->runController('xadmin/addgatew...')
+#21 C:\xampp\htdocs\FormSaz\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\FormSaz\index.php(12): CApplication->run()
+#23 {main}
+REQUEST_URI=/FormSaz/index.php/manage24/addgateway
+HTTP_REFERER=http://localhost/FormSaz/index.php/manage24/index
+---
+2017/12/03 12:23:57 [error] [exception.CException] exception 'CException' with message 'ویژگیهای "Gateway.webservice" تعریف نشده است.' in C:\xampp\htdocs\FormSaz\yii\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\FormSaz\yii\db\ar\CActiveRecord.php(145): CComponent->__get('webservice')
+#1 C:\xampp\htdocs\FormSaz\yii\web\helpers\CHtml.php(2529): CActiveRecord->__get('webservice')
+#2 C:\xampp\htdocs\FormSaz\yii\web\helpers\CHtml.php(1802): CHtml::resolveValue(Object(Gateway), 'webservice')
+#3 C:\xampp\htdocs\FormSaz\yii\web\widgets\CActiveForm.php(847): CHtml::activeDropDownList(Object(Gateway), 'webservice', Array, Array)
+#4 C:\xampp\htdocs\FormSaz\protected\views\xadmin\addgateway.php(35): CActiveForm->dropDownList(Object(Gateway), 'webservice', Array)
+#5 C:\xampp\htdocs\FormSaz\yii\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\FormSaz\yii\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\FormSaz\yii\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\FormSaz\yii\web\CController.php(782): CController->renderPartial('addgateway', Array, true)
+#9 C:\xampp\htdocs\FormSaz\protected\controllers\XadminController.php(154): CController->render('addgateway', Array)
+#10 C:\xampp\htdocs\FormSaz\yii\web\actions\CInlineAction.php(49): XadminController->actionaddgateway()
+#11 C:\xampp\htdocs\FormSaz\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\FormSaz\yii\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\FormSaz\yii\web\filters\CFilter.php(40): CFilterChain->run()
+#14 C:\xampp\htdocs\FormSaz\yii\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\FormSaz\yii\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 C:\xampp\htdocs\FormSaz\yii\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 C:\xampp\htdocs\FormSaz\yii\web\CController.php(291): CFilterChain->run()
+#18 C:\xampp\htdocs\FormSaz\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp\htdocs\FormSaz\yii\web\CWebApplication.php(282): CController->run('addgateway')
+#20 C:\xampp\htdocs\FormSaz\yii\web\CWebApplication.php(141): CWebApplication->runController('xadmin/addgatew...')
+#21 C:\xampp\htdocs\FormSaz\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\FormSaz\index.php(12): CApplication->run()
+#23 {main}
+REQUEST_URI=/FormSaz/index.php/manage24/addgateway
+HTTP_REFERER=http://localhost/FormSaz/index.php/manage24/index
+---
+2017/12/03 12:24:10 [error] [exception.CException] exception 'CException' with message 'ویژگیهای "Gateway.webservice" تعریف نشده است.' in C:\xampp\htdocs\FormSaz\yii\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\FormSaz\yii\db\ar\CActiveRecord.php(145): CComponent->__get('webservice')
+#1 C:\xampp\htdocs\FormSaz\yii\web\helpers\CHtml.php(2529): CActiveRecord->__get('webservice')
+#2 C:\xampp\htdocs\FormSaz\yii\web\helpers\CHtml.php(1802): CHtml::resolveValue(Object(Gateway), 'webservice')
+#3 C:\xampp\htdocs\FormSaz\yii\web\widgets\CActiveForm.php(847): CHtml::activeDropDownList(Object(Gateway), 'webservice', Array, Array)
+#4 C:\xampp\htdocs\FormSaz\protected\views\xadmin\addgateway.php(35): CActiveForm->dropDownList(Object(Gateway), 'webservice', Array)
+#5 C:\xampp\htdocs\FormSaz\yii\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\FormSaz\yii\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\FormSaz\yii\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\FormSaz\yii\web\CController.php(782): CController->renderPartial('addgateway', Array, true)
+#9 C:\xampp\htdocs\FormSaz\protected\controllers\XadminController.php(154): CController->render('addgateway', Array)
+#10 C:\xampp\htdocs\FormSaz\yii\web\actions\CInlineAction.php(49): XadminController->actionaddgateway()
+#11 C:\xampp\htdocs\FormSaz\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\FormSaz\yii\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\FormSaz\yii\web\filters\CFilter.php(40): CFilterChain->run()
+#14 C:\xampp\htdocs\FormSaz\yii\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\FormSaz\yii\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 C:\xampp\htdocs\FormSaz\yii\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 C:\xampp\htdocs\FormSaz\yii\web\CController.php(291): CFilterChain->run()
+#18 C:\xampp\htdocs\FormSaz\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp\htdocs\FormSaz\yii\web\CWebApplication.php(282): CController->run('addgateway')
+#20 C:\xampp\htdocs\FormSaz\yii\web\CWebApplication.php(141): CWebApplication->runController('xadmin/addgatew...')
+#21 C:\xampp\htdocs\FormSaz\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\FormSaz\index.php(12): CApplication->run()
+#23 {main}
+REQUEST_URI=/FormSaz/index.php/manage24/addgateway
+HTTP_REFERER=http://localhost/FormSaz/index.php/manage24/index
+---
+2017/12/03 12:30:23 [error] [exception.CException] exception 'CException' with message 'ویژگیهای "Gateway.webservice" تعریف نشده است.' in C:\xampp\htdocs\FormSaz\yii\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\FormSaz\yii\db\ar\CActiveRecord.php(145): CComponent->__get('webservice')
+#1 C:\xampp\htdocs\FormSaz\yii\web\helpers\CHtml.php(2529): CActiveRecord->__get('webservice')
+#2 C:\xampp\htdocs\FormSaz\yii\web\helpers\CHtml.php(1802): CHtml::resolveValue(Object(Gateway), 'webservice')
+#3 C:\xampp\htdocs\FormSaz\yii\web\widgets\CActiveForm.php(847): CHtml::activeDropDownList(Object(Gateway), 'webservice', Array, Array)
+#4 C:\xampp\htdocs\FormSaz\protected\views\xadmin\addgateway.php(35): CActiveForm->dropDownList(Object(Gateway), 'webservice', Array)
+#5 C:\xampp\htdocs\FormSaz\yii\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\FormSaz\yii\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\FormSaz\yii\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\FormSaz\yii\web\CController.php(782): CController->renderPartial('addgateway', Array, true)
+#9 C:\xampp\htdocs\FormSaz\protected\controllers\XadminController.php(155): CController->render('addgateway', Array)
+#10 C:\xampp\htdocs\FormSaz\yii\web\actions\CInlineAction.php(49): XadminController->actionaddgateway()
+#11 C:\xampp\htdocs\FormSaz\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\FormSaz\yii\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\FormSaz\yii\web\filters\CFilter.php(40): CFilterChain->run()
+#14 C:\xampp\htdocs\FormSaz\yii\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\FormSaz\yii\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 C:\xampp\htdocs\FormSaz\yii\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 C:\xampp\htdocs\FormSaz\yii\web\CController.php(291): CFilterChain->run()
+#18 C:\xampp\htdocs\FormSaz\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp\htdocs\FormSaz\yii\web\CWebApplication.php(282): CController->run('addgateway')
+#20 C:\xampp\htdocs\FormSaz\yii\web\CWebApplication.php(141): CWebApplication->runController('xadmin/addgatew...')
+#21 C:\xampp\htdocs\FormSaz\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\FormSaz\index.php(12): CApplication->run()
+#23 {main}
+REQUEST_URI=/FormSaz/index.php/manage24/addgateway
+HTTP_REFERER=http://localhost/FormSaz/index.php/manage24/index
+---
+2017/12/03 12:31:43 [error] [exception.CException] exception 'CException' with message 'ویژگیهای "Gateway.webservice" تعریف نشده است.' in C:\xampp\htdocs\FormSaz\yii\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\FormSaz\yii\db\ar\CActiveRecord.php(145): CComponent->__get('webservice')
+#1 C:\xampp\htdocs\FormSaz\yii\web\helpers\CHtml.php(2529): CActiveRecord->__get('webservice')
+#2 C:\xampp\htdocs\FormSaz\yii\web\helpers\CHtml.php(1802): CHtml::resolveValue(Object(Gateway), 'webservice')
+#3 C:\xampp\htdocs\FormSaz\yii\web\widgets\CActiveForm.php(847): CHtml::activeDropDownList(Object(Gateway), 'webservice', Array, Array)
+#4 C:\xampp\htdocs\FormSaz\protected\views\xadmin\addgateway.php(35): CActiveForm->dropDownList(Object(Gateway), 'webservice', Array)
+#5 C:\xampp\htdocs\FormSaz\yii\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\FormSaz\yii\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\FormSaz\yii\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\FormSaz\yii\web\CController.php(782): CController->renderPartial('addgateway', Array, true)
+#9 C:\xampp\htdocs\FormSaz\protected\controllers\XadminController.php(155): CController->render('addgateway', Array)
+#10 C:\xampp\htdocs\FormSaz\yii\web\actions\CInlineAction.php(49): XadminController->actionaddgateway()
+#11 C:\xampp\htdocs\FormSaz\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\FormSaz\yii\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\FormSaz\yii\web\filters\CFilter.php(40): CFilterChain->run()
+#14 C:\xampp\htdocs\FormSaz\yii\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\FormSaz\yii\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 C:\xampp\htdocs\FormSaz\yii\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 C:\xampp\htdocs\FormSaz\yii\web\CController.php(291): CFilterChain->run()
+#18 C:\xampp\htdocs\FormSaz\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp\htdocs\FormSaz\yii\web\CWebApplication.php(282): CController->run('addgateway')
+#20 C:\xampp\htdocs\FormSaz\yii\web\CWebApplication.php(141): CWebApplication->runController('xadmin/addgatew...')
+#21 C:\xampp\htdocs\FormSaz\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\FormSaz\index.php(12): CApplication->run()
+#23 {main}
+REQUEST_URI=/FormSaz/index.php/manage24/addgateway
+HTTP_REFERER=http://localhost/FormSaz/index.php/manage24/index
+---
+2017/12/03 12:34:21 [error] [exception.CException] exception 'CException' with message 'ویژگیهای "Gateway.webservice" تعریف نشده است.' in C:\xampp\htdocs\FormSaz\yii\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\FormSaz\yii\db\ar\CActiveRecord.php(145): CComponent->__get('webservice')
+#1 C:\xampp\htdocs\FormSaz\yii\web\helpers\CHtml.php(2529): CActiveRecord->__get('webservice')
+#2 C:\xampp\htdocs\FormSaz\yii\web\helpers\CHtml.php(1802): CHtml::resolveValue(Object(Gateway), 'webservice')
+#3 C:\xampp\htdocs\FormSaz\yii\web\widgets\CActiveForm.php(847): CHtml::activeDropDownList(Object(Gateway), 'webservice', Array, Array)
+#4 C:\xampp\htdocs\FormSaz\protected\views\xadmin\addgateway.php(35): CActiveForm->dropDownList(Object(Gateway), 'webservice', Array)
+#5 C:\xampp\htdocs\FormSaz\yii\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\FormSaz\yii\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\FormSaz\yii\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\FormSaz\yii\web\CController.php(782): CController->renderPartial('addgateway', Array, true)
+#9 C:\xampp\htdocs\FormSaz\protected\controllers\XadminController.php(155): CController->render('addgateway', Array)
+#10 C:\xampp\htdocs\FormSaz\yii\web\actions\CInlineAction.php(49): XadminController->actionaddgateway()
+#11 C:\xampp\htdocs\FormSaz\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\FormSaz\yii\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\FormSaz\yii\web\filters\CFilter.php(40): CFilterChain->run()
+#14 C:\xampp\htdocs\FormSaz\yii\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\FormSaz\yii\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 C:\xampp\htdocs\FormSaz\yii\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 C:\xampp\htdocs\FormSaz\yii\web\CController.php(291): CFilterChain->run()
+#18 C:\xampp\htdocs\FormSaz\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp\htdocs\FormSaz\yii\web\CWebApplication.php(282): CController->run('addgateway')
+#20 C:\xampp\htdocs\FormSaz\yii\web\CWebApplication.php(141): CWebApplication->runController('xadmin/addgatew...')
+#21 C:\xampp\htdocs\FormSaz\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\FormSaz\index.php(12): CApplication->run()
+#23 {main}
+REQUEST_URI=/FormSaz/index.php/manage24/addgateway
+HTTP_REFERER=http://localhost/FormSaz/index.php/manage24/index
+---
+2017/12/03 15:18:04 [error] [exception.CHttpException.500] exception 'CHttpException' with message 'تراکنش ناموفق!' in C:\xampp\htdocs\FormSaz\protected\controllers\XmainController.php:186
+Stack trace:
+#0 [internal function]: XmainController->actionCallback('3')
+#1 C:\xampp\htdocs\FormSaz\yii\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(XmainController), Array)
+#2 C:\xampp\htdocs\FormSaz\yii\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(XmainController), Object(ReflectionMethod), Array)
+#3 C:\xampp\htdocs\FormSaz\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\FormSaz\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\FormSaz\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\FormSaz\yii\web\CWebApplication.php(282): CController->run('callback')
+#7 C:\xampp\htdocs\FormSaz\yii\web\CWebApplication.php(141): CWebApplication->runController('xmain/callback')
+#8 C:\xampp\htdocs\FormSaz\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\FormSaz\index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/FormSaz/index.php/xmain/callback/3?token=8f475fca5d614c8e855da12880dd578783a34988&md5=4a5530579209eae2e819e12b0e625573&md=9cdd91efe17abebb18671555d3dcdd20&sec=5a23e426ae21a&au=txpab2136edffeedaccb&order_id=3
+---
+2017/12/03 15:25:25 [error] [exception.CHttpException.500] exception 'CHttpException' with message 'تراکنش ناموفق!' in C:\xampp\htdocs\FormSaz\protected\controllers\XmainController.php:186
+Stack trace:
+#0 [internal function]: XmainController->actionCallback('6')
+#1 C:\xampp\htdocs\FormSaz\yii\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(XmainController), Array)
+#2 C:\xampp\htdocs\FormSaz\yii\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(XmainController), Object(ReflectionMethod), Array)
+#3 C:\xampp\htdocs\FormSaz\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\FormSaz\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\FormSaz\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\FormSaz\yii\web\CWebApplication.php(282): CController->run('callback')
+#7 C:\xampp\htdocs\FormSaz\yii\web\CWebApplication.php(141): CWebApplication->runController('xmain/callback')
+#8 C:\xampp\htdocs\FormSaz\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\FormSaz\index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/FormSaz/index.php/xmain/callback/6?token=8f475fca5d614c8e855da12880dd578783a34988&md5=de2b093cacf3fc01abe1ef5dda89984c&md=6cb794f26100b8ba2a9a1c9c9c6de4a5&sec=5a23e625a5411&au=txpaeb2138cecdeefece&order_id=6
+---
+2017/12/03 15:59:12 [error] [exception.CHttpException.500] exception 'CHttpException' with message 'تراکنش ناموفق!' in C:\xampp\htdocs\FormSaz\protected\controllers\XmainController.php:186
+Stack trace:
+#0 [internal function]: XmainController->actionCallback('11')
+#1 C:\xampp\htdocs\FormSaz\yii\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(XmainController), Array)
+#2 C:\xampp\htdocs\FormSaz\yii\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(XmainController), Object(ReflectionMethod), Array)
+#3 C:\xampp\htdocs\FormSaz\yii\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\FormSaz\yii\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\FormSaz\yii\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\FormSaz\yii\web\CWebApplication.php(282): CController->run('callback')
+#7 C:\xampp\htdocs\FormSaz\yii\web\CWebApplication.php(141): CWebApplication->runController('xmain/callback')
+#8 C:\xampp\htdocs\FormSaz\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\FormSaz\index.php(12): CApplication->run()
+#10 {main}
+REQUEST_URI=/FormSaz/index.php/xmain/callback/11?token=8f475fca5d614c8e855da12880dd578783a34988&md5=d0a8cbd547ad2be767f9e9fd619bfaed&md=3667c95a84bbc695884c9523dde50b03&sec=5a23ee1198f29&au=txpa21cda4e3eebdefbe&order_id=11
+---
+2017/12/03 16:20:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'سیستم توانایی یافتن عمل "form" را ندارد.' in C:\xampp\htdocs\FormSaz\yii\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\FormSaz\yii\web\CController.php(270): CController->missingAction('form')
+#1 C:\xampp\htdocs\FormSaz\yii\web\CWebApplication.php(282): CController->run('form')
+#2 C:\xampp\htdocs\FormSaz\yii\web\CWebApplication.php(141): CWebApplication->runController('xadmin/form')
+#3 C:\xampp\htdocs\FormSaz\yii\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\FormSaz\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/FormSaz/index.php/xadmin/form?id=2
+HTTP_REFERER=http://localhost/FormSaz/index.php/manage24/formitems
+---

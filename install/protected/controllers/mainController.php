@@ -78,9 +78,7 @@ class mainController extends Controller
 		if(extension_loaded('pdo_mysql'))
 			$out['PDO MySQL extension']=true;
 			
-		$out['SOAP extension'] = false;
-		if(extension_loaded("soap"))
-			$out['SOAP extension']=true;
+	
 			
 		$out['GD extension'] = false;
 		if(extension_loaded('gd'))
@@ -210,6 +208,7 @@ $query[] = "CREATE TABLE IF NOT EXISTS `gateway` (
   `title` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT 'پرداخت آنلاین',
   `type` tinyint(1) NOT NULL DEFAULT '1',
   `api` varchar(255) NOT NULL,
+  `webservice` tinyint(1) NOT NULL DEFAULT '1',
   `param1` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `param2` varchar(255) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
   `status` tinyint(1) unsigned NOT NULL DEFAULT '1',
@@ -217,8 +216,8 @@ $query[] = "CREATE TABLE IF NOT EXISTS `gateway` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;";
 
 
-$query[] = "INSERT INTO `gateway` (`id`, `title`, `type`, `api`, `param1`, `param2`, `status`) VALUES
-(1, 'بانک سامان', 2, 'gtd12123u7', NULL, NULL, 1);";
+$query[] = "INSERT INTO `gateway` (`id`, `title`, `type`, `api`, `webservice`,`param1`, `param2`, `status`) VALUES
+(1, 'بانک سامان', 2, 'gtd12123u7', 1,NULL, NULL, 1);";
 
 $query[] = "CREATE TABLE IF NOT EXISTS `logs` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,

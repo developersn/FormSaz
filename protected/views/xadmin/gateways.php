@@ -2,6 +2,11 @@
 $type = array(
 	 2=>'مستقیم اختصاصي'
 );
+
+$webservice = array(
+ 1=>'فعال',
+	 2=>'غير فعال'
+);
 ?>
 <script>
  function changestatus(id)

@@ -18,8 +18,8 @@ class Controller extends CController
 		if( ! Yii::app()->user->isGuest)
 			$this->userId = (int) Yii::app()->user->id ;
 			
-			Yii::app()->clientScript->registerScript('jahanpay', "
-		// powered by jahanpay_form version 1.0
+			Yii::app()->clientScript->registerScript('sn', "
+		// powered by sn_form version 1.0
 		");
 		
 		

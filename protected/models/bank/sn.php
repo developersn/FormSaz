@@ -1,7 +1,7 @@
 <?php
-class JP2
+class sn
 {
-	public $API = 'gt11111g388';
+	public $API = '';
 	
 	private $go = array();
 	

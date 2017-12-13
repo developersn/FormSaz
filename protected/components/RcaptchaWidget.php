@@ -22,7 +22,7 @@ class RcaptchaWidget extends CWidget
 	
 	public function run()
 	{
-		$id = 'codecaptcha0000000rezaworkshop_ir00000000'.md5($_SERVER['REMOTE_ADDR']);
+		$id = 'codecaptcha0000000sn00000000'.md5($_SERVER['REMOTE_ADDR']);
 		$js = "
 		
  function reload()

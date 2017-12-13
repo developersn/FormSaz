@@ -161,7 +161,7 @@ class FormPay extends CFormModel
 		if($gateway->type==1)
 			$bank = new JP1; //عادی
 		else
-			$bank = new JP2;
+			$bank = new sn;
 			
 		$bank->API = $gateway->api;
 			
@@ -193,7 +193,7 @@ class FormPay extends CFormModel
 		if($gateway->type==1)
 			$bank = new JP1; //عادی
 		else
-			$bank = new JP2;
+			$bank = new sn;
 			
 		$bank->API = $gateway->api;
 		

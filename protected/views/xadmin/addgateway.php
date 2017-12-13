@@ -29,6 +29,13 @@
 		<?php echo $form->error($model,$_); ?>
 	</div>
 	
+		<div class="row">
+		<?php $_='webservice';?>
+		<?php echo $form->labelEx($model,$_); ?><br>
+		<?php echo $form->dropDownList($model,$_,array(1=>'فعال',2=>'غير فعال')); ?>
+		<?php echo $form->error($model,$_); ?>
+	</div>
+	
 	<div class="row">
 		<?php $_='type';?>
 		<?php echo $form->labelEx($model,$_); ?><br>

@@ -144,6 +144,7 @@ class XadminController extends Controller
 			$model->api = strip_tags($model->api);
 			$model->title = strip_tags($model->title);
 			$model->type = (int) $model->type;
+			$model->webservice = (int) $model->webservice;
 			if($model->save())
 			{
 				Yii::app()->user->setFlash('ok','درگاه جدید ساخته شد');
@@ -177,6 +178,7 @@ class XadminController extends Controller
 			$model->api = strip_tags($model->api);
 			$model->title = strip_tags($model->title);
 			$model->type = (int) $model->type;
+			$model->webservice = (int) $model->webservice;
 			if($model->save())
 			{
 				Yii::app()->user->setFlash('ok','درگاه به خوبی ویرایش شد ');
